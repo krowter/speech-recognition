@@ -5,7 +5,11 @@ const toggleLanguage = document.getElementById("toggle-language");
 let recognition = {},
   isRecognizing;
 
-recognition = new webkitSpeechRecognition();
+try {
+  recognition = new webkitSpeechRecognition();
+} catch {
+  warning.textContent = "Please use a chrome-based browser on laptop/desktop";
+}
 
 const initialOptions = {
   lang: "id-ID",
