@@ -1,0 +1,52 @@
+main {
+  display: flex;
+  max-width: 640px;
+  margin: 0 auto;
+  flex-direction: column;
+}
+
+#toggle-button.is-active {
+  background: green;
+}
+#toggle-button:hover {
+  background: blue;
+}
+
+#toggle-button {
+  background: deepskyblue;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: large;
+  font-weight: bold;
+  height: 4rem;
+  padding: 1rem;
+  transition: 0.4s;
+}
+
+#textarea {
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  height: 30rem;
+  font-size: x-large;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  overflow-y: scroll;
+  padding: 1rem;
+}
+
+#form-footer {
+  align-items: center;
+  display: flex;
+  margin-top: 1rem;
+}
+
+#toggle-language {
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  font-size: large;
+  flex: 1;
+  height: 4rem;
+  padding-left: 1rem;
+}

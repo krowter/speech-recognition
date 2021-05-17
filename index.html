@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Speech Recognition</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main>
+      <span id="warning"></span>
+
+      <textarea id="textarea" rows="10" cols="80"></textarea>
+      <section id="form-footer">
+        <select id="toggle-language">
+          <option value="id-ID">Bahasa Indonesia</option>
+          <option value="en-US">US English</option>
+          <option value="en-UK">UK English</option>
+        </select>
+        <button id="toggle-button" onclick="toggleStartStop()">
+          Start Speaking
+        </button>
+      </section>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
